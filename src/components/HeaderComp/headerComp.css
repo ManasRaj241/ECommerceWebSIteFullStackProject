@@ -1,0 +1,46 @@
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff5230;
+    color: #fff;
+    padding: 8px 30px;
+    margin: auto;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}

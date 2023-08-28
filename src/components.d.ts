@@ -5,7 +5,23 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Product } from "./components/AdminProduct/product-service";
+export { Product } from "./components/AdminProduct/product-service";
 export namespace Components {
+    interface AdminProduct {
+    }
+    interface CartComponent {
+    }
+    interface FooterComponent {
+        "name": string;
+    }
+    interface HeaderComponent {
+        "name": string;
+    }
+    interface HomePage {
+    }
+    interface LoginComp {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -20,19 +36,108 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface NavBar {
+        "name": string;
+    }
+    interface ProductComponent {
+    }
+    interface ProductDetailsComponent {
+    }
+}
+export interface AdminProductCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLAdminProductElement;
 }
 declare global {
+    interface HTMLAdminProductElement extends Components.AdminProduct, HTMLStencilElement {
+    }
+    var HTMLAdminProductElement: {
+        prototype: HTMLAdminProductElement;
+        new (): HTMLAdminProductElement;
+    };
+    interface HTMLCartComponentElement extends Components.CartComponent, HTMLStencilElement {
+    }
+    var HTMLCartComponentElement: {
+        prototype: HTMLCartComponentElement;
+        new (): HTMLCartComponentElement;
+    };
+    interface HTMLFooterComponentElement extends Components.FooterComponent, HTMLStencilElement {
+    }
+    var HTMLFooterComponentElement: {
+        prototype: HTMLFooterComponentElement;
+        new (): HTMLFooterComponentElement;
+    };
+    interface HTMLHeaderComponentElement extends Components.HeaderComponent, HTMLStencilElement {
+    }
+    var HTMLHeaderComponentElement: {
+        prototype: HTMLHeaderComponentElement;
+        new (): HTMLHeaderComponentElement;
+    };
+    interface HTMLHomePageElement extends Components.HomePage, HTMLStencilElement {
+    }
+    var HTMLHomePageElement: {
+        prototype: HTMLHomePageElement;
+        new (): HTMLHomePageElement;
+    };
+    interface HTMLLoginCompElement extends Components.LoginComp, HTMLStencilElement {
+    }
+    var HTMLLoginCompElement: {
+        prototype: HTMLLoginCompElement;
+        new (): HTMLLoginCompElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLNavBarElement extends Components.NavBar, HTMLStencilElement {
+    }
+    var HTMLNavBarElement: {
+        prototype: HTMLNavBarElement;
+        new (): HTMLNavBarElement;
+    };
+    interface HTMLProductComponentElement extends Components.ProductComponent, HTMLStencilElement {
+    }
+    var HTMLProductComponentElement: {
+        prototype: HTMLProductComponentElement;
+        new (): HTMLProductComponentElement;
+    };
+    interface HTMLProductDetailsComponentElement extends Components.ProductDetailsComponent, HTMLStencilElement {
+    }
+    var HTMLProductDetailsComponentElement: {
+        prototype: HTMLProductDetailsComponentElement;
+        new (): HTMLProductDetailsComponentElement;
+    };
     interface HTMLElementTagNameMap {
+        "admin-product": HTMLAdminProductElement;
+        "cart-component": HTMLCartComponentElement;
+        "footer-component": HTMLFooterComponentElement;
+        "header-component": HTMLHeaderComponentElement;
+        "home-page": HTMLHomePageElement;
+        "login-comp": HTMLLoginCompElement;
         "my-component": HTMLMyComponentElement;
+        "nav-bar": HTMLNavBarElement;
+        "product-component": HTMLProductComponentElement;
+        "product-details-component": HTMLProductDetailsComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface AdminProduct {
+        "onProductAdded"?: (event: AdminProductCustomEvent<Product>) => void;
+    }
+    interface CartComponent {
+    }
+    interface FooterComponent {
+        "name"?: string;
+    }
+    interface HeaderComponent {
+        "name"?: string;
+    }
+    interface HomePage {
+    }
+    interface LoginComp {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -47,15 +152,40 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface NavBar {
+        "name"?: string;
+    }
+    interface ProductComponent {
+    }
+    interface ProductDetailsComponent {
+    }
     interface IntrinsicElements {
+        "admin-product": AdminProduct;
+        "cart-component": CartComponent;
+        "footer-component": FooterComponent;
+        "header-component": HeaderComponent;
+        "home-page": HomePage;
+        "login-comp": LoginComp;
         "my-component": MyComponent;
+        "nav-bar": NavBar;
+        "product-component": ProductComponent;
+        "product-details-component": ProductDetailsComponent;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "admin-product": LocalJSX.AdminProduct & JSXBase.HTMLAttributes<HTMLAdminProductElement>;
+            "cart-component": LocalJSX.CartComponent & JSXBase.HTMLAttributes<HTMLCartComponentElement>;
+            "footer-component": LocalJSX.FooterComponent & JSXBase.HTMLAttributes<HTMLFooterComponentElement>;
+            "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
+            "home-page": LocalJSX.HomePage & JSXBase.HTMLAttributes<HTMLHomePageElement>;
+            "login-comp": LocalJSX.LoginComp & JSXBase.HTMLAttributes<HTMLLoginCompElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "nav-bar": LocalJSX.NavBar & JSXBase.HTMLAttributes<HTMLNavBarElement>;
+            "product-component": LocalJSX.ProductComponent & JSXBase.HTMLAttributes<HTMLProductComponentElement>;
+            "product-details-component": LocalJSX.ProductDetailsComponent & JSXBase.HTMLAttributes<HTMLProductDetailsComponentElement>;
         }
     }
 }

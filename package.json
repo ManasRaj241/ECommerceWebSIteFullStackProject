@@ -26,14 +26,19 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^4.0.0"
+    "@ionic/vue": "^7.2.2",
+    "@ionic/vue-router": "^7.2.2",
+    "@stencil/core": "^4.0.0",
+    "@stencil/router": "^1.18.3"
   },
   "devDependencies": {
+    "@stencil-community/router": "^1.0.2",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
-    "puppeteer": "^20.7.3"
+    "puppeteer": "^20.7.3",
+    "stencil-router-v2": "^0.6.0"
   },
   "license": "MIT"
 }

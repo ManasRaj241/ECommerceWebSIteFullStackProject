@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imagePath": "../assets/product-1.jpg",
+      "name": "Red Printed T-Shirt",
+      "price": "2,500.00"
+    },
+    {
+      "id": 2,
+      "imagePath": "../assets/product-2.jpg",
+      "name": "Casual Shoes",
+      "price": "1,200.00"
+    },
+    {
+      "id": 3,
+      "imagePath": "../assets/product-3.jpg",
+      "name": "Track Pant",
+      "price": "1,700.00"
+    },
+    {
+      "id": 4,
+      "imagePath": "../assets/product-4.jpg",
+      "name": "Casual Shirt",
+      "price": "2,900.00"
+    },
+    {
+      "id": 5,
+      "imagePath": "../assets/product-5.jpg",
+      "name": "White Sneaker",
+      "price": "3,500.00"
+    },
+    {
+      "id": 6,
+      "imagePath": "../assets/product-6.jpg",
+      "name": "Black plain T-Shirts",
+      "price": "500.00"
+    },
+    {
+      "id": 7,
+      "imagePath": "../assets/product-7.jpg",
+      "name": "Socks",
+      "price": "200.0"
+    },
+    {
+      "id": 8,
+      "imagePath": "../assets/product-8.jpg",
+      "name": "Analog Watch",
+      "price": "1,900.00"
+    },
+    {
+      "id": 9,
+      "imagePath": "../assets/product-9.jpg",
+      "name": "Digital Watch",
+      "price": "2,100.00"
+    },
+    {
+      "id": 10,
+      "imagePath": "../assets/product-10.jpg",
+      "name": "Black Sneakers",
+      "price": "7,500.00"
+    },
+    {
+      "id": 11,
+      "imagePath": "../assets/product-11.jpg",
+      "name": "White shoes",
+      "price": "1,500.00"
+    },
+    {
+      "id": 12,
+      "imagePath": "../assets/product-12.jpg",
+      "name": "Sports pants",
+      "price": "3468.99"
+    },
+    {
+      "id": 13,
+      "imagePath": "../assets/product-13.jpg",
+      "name": "Water Bottle",
+      "price": "1,100.00"
+    },
+    {
+      "id": 14,
+      "imagePath": "../assets/product-14.jpg",
+      "name": "New Balance Shoes",
+      "price": "3,500.00"
+    },
+    {
+      "id": 15,
+      "imagePath": "../assets/product-15.jpg",
+      "name": "Shampoo",
+      "price": "699.00"
+    }
+  ]
+}
